@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---clean---') { 
 		tools {
-			maven ‘maven3.8.6’
+			maven 'maven3.8.6'
 		}
             steps {
                 sh 'mvn clean'
@@ -11,7 +11,7 @@ pipeline {
         }
   stage('---test---') { 
 		tools {
-			maven ‘maven3.8.6’
+			maven 'maven3.8.6'
 		}
             steps {
                 sh 'mvn test'
